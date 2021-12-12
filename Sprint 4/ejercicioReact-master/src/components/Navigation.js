@@ -15,7 +15,7 @@ export default function Navigation() {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link as={NavLink} to={routes.libros}>Libros</Nav.Link>
-                    <Nav.Link as={NavLink} to={routes.admin.users}>Usuarios</Nav.Link>
+                    <Nav.Link as={NavLink} to={routes.users}>Usuarios</Nav.Link>
                 </Nav>
                 <Nav>
                     <Nav.Link as={NavLink} to={routes.login}>Iniciar sesión</Nav.Link>

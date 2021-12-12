@@ -2,7 +2,7 @@ import { Switch, Route } from 'react-router-dom'
 import roles from '../helpers/roles'
 import routes from '../helpers/routes'
 import AccountPage from '../pages/accountPage'
-import UsersPage from '../pages/admin/UsersPage'
+import UsersPage from '../pages/UsersPage'
 import HomePage from '../pages/HomePage'
 import LibroPage from '../pages/LibroPage'
 import LibrosPage from '../pages/LibrosPage'
@@ -21,7 +21,7 @@ export default function AppRouter() {
                     <PrivateRoute exact path={routes.account} component={AccountPage} />
                     <Route exact path={routes.libros} component={LibrosPage} />
                     <Route exact path={routes.libro()} component={LibroPage} />
-                    <PrivateRoute hasRole={roles.admin} exact path={routes.admin.users} component={UsersPage} />
+                    <Route exact path={routes.users} component={UsersPage} />
 
                     <Route path="*" component={NotFoundPage} />
                 </Switch>
